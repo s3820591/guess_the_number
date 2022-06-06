@@ -30,6 +30,7 @@ def hangman():
             if user_guess in word_letter:
                 word_letter.remove(user_guess)
             else:
+                print('Letter is not in word')
                 life -= 1
     
         elif user_guess in used_letters:
